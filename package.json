@@ -9,6 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.9",
+    "fabric": "^5.2.1",
+    "file-saver": "^2.0.5",
+    "localforage": "^1.10.0",
+    "nanoid": "^4.0.0",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"

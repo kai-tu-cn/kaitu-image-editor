@@ -1,0 +1,102 @@
+.ui-editor{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  min-width: 1140px;
+  .ui-block{
+    width: 100%;
+  }
+  .ui-margin-top{
+    margin-top: 20px;
+  }
+  .ui-editor_formwork{
+    width: 260px;
+    height: 100%;
+    .el-tabs{
+      height: 100%;
+      .el-tabs__content{
+        height: calc(100%  - 40px);
+        padding: 0;
+        .el-tab-pane{
+          height: 100%;
+          overflow: hidden;
+        }
+      }
+    }
+    .ui-editor_formwork_template{
+      list-style: none;
+      margin: 0;
+      padding: 5px;
+      height: 100%;
+      overflow-y: auto;
+      li{
+        height: 160px;
+        &:hover{
+          outline: 1px solid #409EFF;
+        }
+        &+li{
+          margin-top: 10px;
+          border-top: 1px solid #DCDFE6;
+        }
+        img{
+          height: 140px;
+          width: 100%;
+        }
+        div{
+          height: 20px;
+          text-align: center;
+          font-size: 13px;
+        }
+      }
+    }
+    .ui-editor_formwork_material{
+      list-style: none;
+      margin: 0;
+      padding: 5px;
+      height: 100%;
+      overflow-y: auto;
+      li{
+        float: left;
+        width: 110px;
+        height: 140px;
+        &:hover{
+          outline: 1px solid #409EFF;
+        }
+        &+li{
+          margin: 5px;
+        }
+        img{
+          height: 110px;
+          width: 100%;
+        }
+        div{
+          height: 20px;
+          text-align: center;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .ui-editor_workspace{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #ccc;
+    .ui-editor_container{
+      margin: 20px;
+    }
+  }
+  .ui-editor_property{
+    width: 240px;
+    background: #fff;
+    .el-tabs{
+      height: 100%;
+      .el-tabs__content{
+        height: calc(100%  - 40px);
+        padding: 10px;
+      }
+    }
+  }
+}
