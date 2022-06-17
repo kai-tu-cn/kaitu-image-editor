@@ -14,32 +14,32 @@ export default {
       material: [
         {
           name: '文本',
-          icon: '',
+          icon: '#icon-wenben',
           type: 'IText'
         },
         {
           name: '矩形',
-          icon: '',
+          icon: '#icon-juxing',
           type: 'Rect'
         },
         {
           name: '圆形',
-          icon: '',
+          icon: '#icon-circle',
           type: 'Circle'
         },
         {
           name: '三角形',
-          icon: '',
+          icon: '#icon-xingzhuang-sanjiaoxing',
           type: 'Triangle'
         },
         {
           name: '线条',
-          icon: '',
+          icon: '#icon-zhixian',
           type: 'Line'
         },
         {
           name: '箭头',
-          icon: '',
+          icon: '#icon-jiantou',
           type: 'Arrow'
         },
         {
@@ -165,7 +165,8 @@ export default {
             id: nanoid(6),
             left: left,
             top: top,
-            fill: '#409EFF',
+            stroke: '#409EFF',
+            strokeWidth: 2,
           });
           break;
         case 'Arrow':

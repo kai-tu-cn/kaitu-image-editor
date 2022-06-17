@@ -1,0 +1,65 @@
+{
+  "id": "3472194",
+  "name": "图片编辑器",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4354256",
+      "name": "形状-三角形",
+      "font_class": "xingzhuang-sanjiaoxing",
+      "unicode": "eb99",
+      "unicode_decimal": 60313
+    },
+    {
+      "icon_id": "6586753",
+      "name": "圆形",
+      "font_class": "circle",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "12550614",
+      "name": "矩形",
+      "font_class": "juxing",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "12550615",
+      "name": "直线",
+      "font_class": "zhixian",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "12550616",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "17692235",
+      "name": "矩形",
+      "font_class": "rect",
+      "unicode": "e706",
+      "unicode_decimal": 59142
+    },
+    {
+      "icon_id": "20360858",
+      "name": "符号-文本",
+      "font_class": "wenben",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "21024744",
+      "name": "线条",
+      "font_class": "line",
+      "unicode": "e7cf",
+      "unicode_decimal": 59343
+    }
+  ]
+}

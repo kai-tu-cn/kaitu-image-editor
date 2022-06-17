@@ -4,15 +4,15 @@ module.exports = defineConfig({
   devServer: {
     open: true,
     port: 1234,
-    compress: true,
+    compress: true
   },
   chainWebpack: config => {
     config.resolve.extensions
       .clear()
       .add('.vue')
       .add('.js')
-      .add('.json');
-    config.resolve.symlinks(true);
+      .add('.json')
+    config.resolve.symlinks(true)
   },
   productionSourceMap: false
 })

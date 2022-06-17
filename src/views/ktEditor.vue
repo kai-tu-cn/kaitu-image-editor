@@ -29,7 +29,9 @@
                     <img :src="item.icon" alt="">
                   </template>
                   <template>
-                    <i></i>
+                    <svg class="icon">
+                      <use :xlink:href="item.icon"></use>
+                    </svg>
                   </template>
                   <div>{{item.name}}</div>
                 </li>
