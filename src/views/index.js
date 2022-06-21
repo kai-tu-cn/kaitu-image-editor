@@ -10,6 +10,7 @@ let background = null
 export default {
   data () {
     return {
+      publicPath: process.env.NODE_ENV === 'production' ? '/kaitu-image-editor' : '/',
       activeName: 'material',
       tempTitle: '778',
       tempVisible: false,
@@ -52,12 +53,12 @@ export default {
         },
         {
           name: '图片1',
-          icon: '/static/img/1.jpg',
+          icon: 'static/img/1.jpg',
           type: 'Image'
         },
         {
           name: '图片2',
-          icon: '/static/img/2.jpg',
+          icon: 'static/img/2.jpg',
           type: 'Image'
         }
       ],

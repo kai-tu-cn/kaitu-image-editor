@@ -33,7 +33,7 @@
                 title="拖拽添加"
                 >
                   <template v-if="item.type == 'Image'">
-                    <img :src="item.icon" alt="">
+                    <img :src="`${publicPath}${item.icon}`" alt="">
                   </template>
                   <template v-else>
                     <svg class="icon">
