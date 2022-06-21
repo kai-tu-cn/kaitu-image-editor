@@ -16,7 +16,7 @@
 > 一款轻量级且可扩展的图片编辑器
 kaitu-image-editor 是基于Fabric.js实现的在线可视化图片编辑器
 
-### ✨ [Demo](http://kai-tu_cn.github.io/kaitu-image-editor)
+### ✨ [Demo](http://kai-tu-cn.github.io/kaitu-image-editor)
 
 
 ## 开发

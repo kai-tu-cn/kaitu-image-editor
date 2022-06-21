@@ -16,7 +16,7 @@
 >  A lightweight and scalable picture editor.
 kaitu-image-editor is an online image editor application based on Fabric.js
 
-### ✨ [Demo](http://kai-tu_cn.github.io/kaitu-image-editor)
+### ✨ [Demo](http://kai-tu-cn.github.io/kaitu-image-editor)
 
 
 ## Development
