@@ -1,5 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
+  publicPath: process.env.NODE_ENV === 'production' ? '/kaitu-image-editor' : '/',
   transpileDependencies: true,
   devServer: {
     open: true,

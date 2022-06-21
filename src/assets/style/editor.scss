@@ -3,7 +3,6 @@
   width: 100%;
   position: relative;
   display: flex;
-  min-width: 1140px;
   .ui-block{
     width: 100%;
   }
@@ -31,9 +30,14 @@
       height: 100%;
       overflow-y: auto;
       li{
+        position: relative;
         height: 160px;
+        cursor: pointer;
         &:hover{
           outline: 1px solid #409EFF;
+          .ui-editor_delete{
+            display: block;
+          }
         }
         &+li{
           margin-top: 10px;
@@ -48,6 +52,13 @@
           text-align: center;
           font-size: 13px;
         }
+        .ui-editor_delete{
+          display: none;
+          position: absolute;
+          right: 5px;
+          top: 5px;
+          color: red;
+        }
       }
     }
     .ui-editor_formwork_material{
@@ -58,17 +69,19 @@
       overflow-y: auto;
       li{
         float: left;
-        width: 110px;
-        height: 140px;
+        width: 70px;
+        cursor: pointer;
+        margin: 5px;
+        text-align: center;
         &:hover{
           outline: 1px solid #409EFF;
         }
-        &+li{
-          margin: 5px;
-        }
         img{
-          height: 110px;
+          height: 70px;
           width: 100%;
+        }
+        .icon{
+          font-size: 50px;
         }
         div{
           height: 20px;
@@ -85,7 +98,33 @@
     overflow: auto;
     background: #ccc;
     .ui-editor_container{
-      margin: 20px;
+      width: 100%;
+      height: 100%;
+    }
+    .ui-editor_menu{
+      position: fixed;
+      z-index: 129;
+      width: 140px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 4px;
+      box-shadow: rgb(0 0 0 / 10%) 0.5px 2px 7px;
+      display: none;
+      ul{
+        list-style: none;
+        padding: 5px 0;
+        margin: 0;
+        li{
+          padding: 5px 20px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          user-select: none;
+          font-size: 14px;
+          &:hover{
+            background-color: #ececff;
+          }
+        }
+      }
     }
   }
   .ui-editor_property{
@@ -96,6 +135,18 @@
       .el-tabs__content{
         height: calc(100%  - 40px);
         padding: 10px;
+      }
+    }
+    .ui-editor_gradient{
+      display: flex;
+      flex-wrap: wrap;
+      .ui-editor_gradient_item{
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 5px;
       }
     }
   }

@@ -11,15 +11,15 @@
   </a>
 </p>
 
-简体中文 | [English](README_en.md)
+[简体中文](README.md) | English
 
-> 一款轻量级且可扩展的图片编辑器
-kaitu-image-editor 是基于Fabric.js实现的在线可视化图片编辑器
+>  A lightweight and scalable picture editor.
+kaitu-image-editor is an online image editor application based on Fabric.js
 
 ### ✨ [Demo](http://kai-tu_cn.github.io/kaitu-image-editor)
 
 
-## 开发
+## Development
 ```bash
 $ git clone https://github.com/kai-tu-cn/kaitu-image-editor
 $ cd kaitu-image-editor
@@ -29,9 +29,9 @@ $ yarn run serve
 
 ## Author
 
-👤 **开图软件**
+👤 **kaitu-soft**
 
-* Website: [网站](http://139.159.160.146/)
+* Website: [Website](http://139.159.160.146/)
 * Github: [Github](https://github.com/kai-tu-cn)
 
 ## Show your support
@@ -41,5 +41,5 @@ Give a ⭐️ if this project helped you!
 ## LICENSE
 MIT 2.0
 
-## 技术反馈和交流群
-微信：kai-tu_cn
+## Technical feedback and communication
+wechat：kai-tu_cn

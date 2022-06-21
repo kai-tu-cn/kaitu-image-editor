@@ -43,10 +43,20 @@ body, html{
   width: 100%;
   background: #f2f2f2;
   .ui-index_header{
-    padding: 10px 60px;
+    padding: 10px 20px;
     height: 50px;
     background-color: #fff;
     display: flex;
+    .soft{
+      display: inline-block;
+      margin: 0 5px;
+      background-color: #0069d9;
+      color: #fff;
+      border-radius: 4px;
+      padding: 5px 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
     .project{
       flex: 1 1;
       font-weight: 700;
@@ -61,6 +71,7 @@ body, html{
     text-align: center;
     font-size: 14px;
     color: #ccc;
+    cursor: pointer;
   }
 }
 @import "./editor.scss"
