@@ -120,7 +120,8 @@ export default {
           value: 'delete'
         }
       ],
-      editObject: {}
+      editObject: {},
+      props: ['id']
     }
   },
   mounted () {
@@ -216,7 +217,7 @@ export default {
       const self = this
       _fabricObj.discardActiveObject()
       _fabricObj.renderAll();
-      const json = _fabricObj.toDatalessJSON()
+      const json = _fabricObj.toDatalessJSON(self.props)
       const img = self.disposeImage()
       const id = nanoid(6)
       localforage.getItem('kt_temps').then(res => {
@@ -251,7 +252,13 @@ export default {
     },
     loadFormwork (item) {
       _fabricObj.clear();
-      _fabricObj.loadFromJSON(item.json, _fabricObj.renderAll.bind(_fabricObj))
+      _fabricObj.loadFromJSON(item.json, _fabricObj.renderAll.bind(_fabricObj), 
+      function (o, object) {
+        if (object.id === 'background') {
+          background = object
+          background.center()
+        }
+      })
     },
     deleteFormwork(e, index, item) {
       const self = this
@@ -477,7 +484,13 @@ export default {
           const reader = new FileReader();
           reader.onloadend = (e) => {
             _fabricObj.clear();
-            _fabricObj.loadFromJSON(e.target.result, _fabricObj.renderAll.bind(_fabricObj))
+            _fabricObj.loadFromJSON(e.target.result, _fabricObj.renderAll.bind(_fabricObj),
+            function (o, object) {
+              if (object.id === 'background') {
+                background = object
+                background.center()
+              }
+            })
           };
           reader.readAsText(file, 'utf-8');
         }
@@ -485,9 +498,10 @@ export default {
       input.click();
     },
     downloadJson() {
+      const self = this
       _fabricObj.discardActiveObject()
       _fabricObj.renderAll();
-      const json = _fabricObj.toDatalessJSON()
+      const json = _fabricObj.toDatalessJSON(self.props)
       let content = JSON.stringify(json)
       FileSaver.saveAs(
         new Blob([content], { type: 'text/plain;charset=utf-8' }),
@@ -497,7 +511,7 @@ export default {
     canvasSelectObject(e){
       const self = this
       const row = e.selected[0]
-      self.editObject = row.toJSON()
+      self.editObject = row.toJSON(self.props)
     },
     handleChangeObject(obj) {
       const currentActive = _fabricObj.getActiveObject()
