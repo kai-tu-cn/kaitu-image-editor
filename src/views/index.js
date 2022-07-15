@@ -105,11 +105,11 @@ export default {
         },
         {
           name: '下移图层',
-          value: 'bringToFront'
+          value: 'sendBackwards'
         },
         {
           name: '置顶',
-          value: 'sendBackwards'
+          value: 'bringToFront'
         },
         {
           name: '置底',
