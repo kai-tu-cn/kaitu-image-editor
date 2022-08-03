@@ -53,12 +53,12 @@ export default {
         },
         {
           name: '图片1',
-          icon: 'static/img/1.jpg',
+          icon: '/static/img/1.jpg',
           type: 'Image'
         },
         {
           name: '图片2',
-          icon: 'static/img/2.jpg',
+          icon: '/static/img/2.jpg',
           type: 'Image'
         }
       ],
