@@ -519,7 +519,7 @@ export default {
       _fabricObj.renderAll()
     },
     openSoft() {
-      const url = 'http://139.159.160.146/'
+      const url = 'http://139.9.84.71/'
       window.open(url,'_blank')
     }
   }
